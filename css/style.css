@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #B78D65;
     --light: #F8F8F8;
@@ -10,7 +9,8 @@ h2,
 .h1,
 .h2,
 .fw-bold {
-    font-weight: 600 !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat", serif;
 }
 
 h3,
@@ -19,14 +19,20 @@ h4,
 .h4,
 .fw-medium {
     font-weight: 500 !important;
+    font-family: "Montserrat", serif;
 }
 
 h5,
 h6,
+a,
+p,
 .h5,
 .h6,
-.fw-normal {
+.fw-normal,
+.a,
+.p {
     font-weight: 400 !important;
+    font-family: "Montserrat", serif;
 }
 
 .back-to-top {
@@ -35,6 +41,12 @@ h6,
     right: 30px;
     bottom: 30px;
     z-index: 99;
+}
+
+#MIlogo {
+    font-size: 40px;
+    font-weight: 800 !important;
+    font-family: "Montserrat", serif;
 }
 
 
@@ -105,7 +117,7 @@ h6,
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Montserrat", serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -247,34 +259,6 @@ h6,
     font-weight: 600;
     letter-spacing: 5px;
     text-transform: uppercase;
-}
-
-
-/*** Facts ***/
-.fact-item .fact-icon {
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
-    margin-bottom: 1.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    border-radius: 120px;
-    transition: .5s;
-}
-
-.fact-item:hover .fact-icon {
-    background: var(--dark);
-}
-
-.fact-item .fact-icon i {
-    color: var(--primary);
-    transition: .5;
-}
-
-.fact-item:hover .fact-icon i {
-    color: #FFFFFF;
 }
 
 
@@ -463,143 +447,6 @@ h6,
 }
 
 
-/*** Team ***/
-.team-items {
-    margin: -.75rem;
-}
-
-.team-item {
-    padding: .75rem;
-}
-
-.team-item::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background: #FFFFFF;
-    transition: .5s;
-    z-index: -1;
-}
-
-.team-item:hover::after {
-    height: 100%;
-    background: var(--primary);
-}
-
-.team-item .team-social {
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0;
-}
-
-.team-item .team-social .btn {
-    display: inline-flex;
-    margin: 0 2px;
-    color: var(--primary);
-    background: var(--light);
-}
-
-.team-item .team-social .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-
-
-/*** Appointment ***/
-.bootstrap-datetimepicker-widget.bottom {
-    top: auto !important;
-}
-
-.bootstrap-datetimepicker-widget .table * {
-    border-bottom-width: 0px;
-}
-
-.bootstrap-datetimepicker-widget .table th {
-    font-weight: 500;
-}
-
-.bootstrap-datetimepicker-widget.dropdown-menu {
-    padding: 10px;
-    border-radius: 2px;
-}
-
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-    background: var(--primary);
-}
-
-.bootstrap-datetimepicker-widget table td.today::before {
-    border-bottom-color: var(--primary);
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel {
-    display: flex !important;
-    flex-direction: column-reverse;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.testimonial-carousel .owl-dots {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.testimonial-carousel .owl-dots .owl-dot {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active {
-    width: 100px;
-    height: 100px;
-}
-
-.testimonial-carousel .owl-dots .owl-dot::after {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: var(--primary);
-    background: #FFFFFF;
-    border-radius: 40px;
-    transition: .5s;
-    opacity: 0;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active::after {
-    opacity: 1;
-}
-
-.testimonial-carousel .owl-dots .owl-dot img {
-    opacity: .4;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active img {
-    opacity: 1;
-}
-
-
 /*** Footer ***/
 .footer .btn.btn-link {
     display: block;
@@ -615,7 +462,7 @@ h6,
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Montserrat", serif;
     font-weight: 900;
     color: var(--primary);
     margin-right: 10px;
