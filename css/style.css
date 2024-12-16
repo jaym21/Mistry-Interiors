@@ -44,7 +44,7 @@ p,
 }
 
 #MIlogo {
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 800 !important;
     font-family: "Montserrat", serif;
 }
@@ -383,6 +383,7 @@ p,
     height: 50px;
     margin: 0 40px;
   }
+
 
 /*** Project Expanded ***/
 .project .nav .nav-link {
